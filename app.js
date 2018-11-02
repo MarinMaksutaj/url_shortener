@@ -7,10 +7,10 @@ const mongoose = require("mongoose");
 require('./models/UrlShortener');
 const app = express();
 
-const port = 42069;
+const port = process.env.PORT || 42069;
 
 
-const mongoURI = "mongodb://localhost/url-shortner";
+const mongoURI = process.env.MONGODB_URI;
 
 const connectOptions = {
   keepAlive: true,
