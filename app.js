@@ -7,8 +7,6 @@ const mongoose = require("mongoose");
 require('./models/UrlShortener');
 const app = express();
 
-const port = process.env.PORT || 42069;
-
 
 const mongoURI = process.env.MONGODB_URI;
 
@@ -38,7 +36,7 @@ app.use(bodyParser.json());
   
 app.use(express.static(path.join(__dirname , "front")));
 
-app.listen(port , function () {
+app.listen(process.env.PORT || 3000 , function () {
 	console.log("Application started at: " + port);
 });
 
