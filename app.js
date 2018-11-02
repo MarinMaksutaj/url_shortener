@@ -37,6 +37,10 @@ app.use(bodyParser.json());
   
 app.use(express.static(path.join(__dirname , "front")));
 
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname + 'front/index.html'));
+});
+
 app.listen(port , function () {
 	console.log("Application started at: " + port);
 });
