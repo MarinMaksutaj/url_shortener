@@ -1,0 +1,30 @@
+.maindiv * {
+	width:100%;
+	text-align: center;
+	float: none;
+	margin: 0 auto !important;
+}
+
+.maindiv {
+	margin-top: 15%;
+	width:100%;
+}
+
+body {
+	animation : ngjyra 5s infinite;
+}
+
+@keyframes ngjyra {
+	0% {
+		background-color: #8cb3f2;
+	}
+	25% {
+		background-color: #8eedb1;
+	}
+	50% {
+		background-color: #f4a395;
+	}
+	100% {
+		background-color: #efe97c;
+	}
+}

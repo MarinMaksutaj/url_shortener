@@ -1,0 +1,20 @@
+{
+  "name": "url_shortener",
+  "version": "1.0.0",
+  "description": "a simple url shortener app to practice my nodejs skills",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marin Maksutaj",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.8",
+    "morgan": "^1.9.1",
+    "shortid": "^2.2.13",
+    "valid-url": "^1.0.9"
+  }
+}
