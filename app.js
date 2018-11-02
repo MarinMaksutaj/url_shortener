@@ -8,7 +8,7 @@ require('./models/UrlShortener');
 const app = express();
 
 
-const mongoURI = "process.env.MONGODB_URI";
+const mongoURI = process.env.MONGODB_URI;
 const port = process.env.PORT || 3000;
 
 const connectOptions = {
