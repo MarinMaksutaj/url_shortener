@@ -24,7 +24,7 @@ mongoose.Promise = global.Promise;
 mongoose.connect(mongoURI, connectOptions, (err, db) => {
 	//using string literals ?
   if (err) {
-  	console.log(`Error`, er);
+  	console.log(`Error`, err);
   } else {
   	console.log(`Connected to MongoDB`);
   }  
