@@ -8,7 +8,8 @@ require('./models/UrlShortener');
 const app = express();
 
 
-const mongoURI = process.env.MONGODB_URI;
+const mongoURI = "process.env.MONGODB_URI";
+const port = process.env.PORT || 3000;
 
 const connectOptions = {
   keepAlive: true,
@@ -36,8 +37,9 @@ app.use(bodyParser.json());
   
 app.use(express.static(path.join(__dirname , "front")));
 
-app.listen(process.env.PORT || 3000 , function () {
+app.listen(port , function () {
 	console.log("Application started at: " + port);
 });
 
 require("./routes/urlshorten")(app);
+ 
